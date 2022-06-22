@@ -1,0 +1,19 @@
+start the instance in AWS
+connecting to the instance/workspace through git terminal - by copying SSH client example
+moving to root user - sudo -i // ignore this and continue in the workspace (ubuntu) 
+ssh-keygen - to setup a new key
+Enters the location where the key will be saved
+Enter with no passphrase
+Enter again with no passphrase
+A new public key will be generated
+cat ~/.ssh/id_rsa.pub
+copy the key and paste it in SSH & GPG keys //delete if any existing keys added already
+open git terminal and enter command - ssh git@github.com
+Enter yes to connect
+The message displays that the authentication is successful
+
+navigate to the source dr
+git init
+git add .
+git remote add origin git@github.com:github username/repo name.git
+git push -u origin master
